@@ -13,6 +13,7 @@
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
    <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Changa+One|Raleway:100" rel="stylesheet" type="text/css">
 
   <!-- bootswatch -->
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
@@ -23,23 +24,51 @@
 
 <body>
 
-<h1>Coffee Around Brooklyn</h1>
 
-<div class="square">
-There are plenty of coffee shops in New York City. <br/>
-But it can be pretty overwhelming to find a good one. <br/>
-Here are my recommendations that may or may not be helpful.
-</div>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Coffee Shops Around Brooklyn</a>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href='#' id="btn-about">About</a></li>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron">
+      <h2>BROOKLYN</h2>
+      <p>Explore the map below to discover coffee shop locations around the borough that are ideal for working</p>
+    </div>
+
+<!-- 
+
 <p>Click to pan to the following areas:<br/>
 <button id=NYU class="button">Manhattan</button>
 <button id=BK class="button">Brooklyn</button>
 <button id=QN class="button">Queens</button>
-</p>
+</p> -->
 
 <div id="map"></div>
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
  	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   	<script type="text/javascript">
+
+//EDIT THIS -- Put in jumbotron toggles for About section//
+  	$(document).ready(function(){
+  		$("#btn-about").click(function(){
+  			$(#"about").slideToggle("slow");
+  		});
+  	});
+  	
 
 // leaflet information:
 
@@ -124,27 +153,27 @@ mymappoints.forEach(function(element){
 });
 
 
-  var panOptions = {
-    animate: true,
-    duration: 2
-  }
+  // var panOptions = {
+  //   animate: true,
+  //   duration: 2
+  // }
 
-  var nyupan = [40.730982,-73.997340];
-  var brooklynpan = [40.674064,-73.970089];
-  var queenspan = [40.752264,-73.923826];
+  // var nyupan = [40.730982,-73.997340];
+  // var brooklynpan = [40.674064,-73.970089];
+  // var queenspan = [40.752264,-73.923826];
 
 
-  $(".button").click(function() {
-      if($(this).attr('id') == 'NYU' ) {
-        map.panTo(nyupan, panOptions);
-      } 
-      if($(this).attr('id') == 'BK' ) {
-      	map.panTo(brooklynpan, panOptions);
-      }
-      if($(this).attr('id') == 'QN' ) {
-        map.panTo(queenspan, panOptions);
-       }
-   });
+  // $(".button").click(function() {
+  //     if($(this).attr('id') == 'NYU' ) {
+  //       map.panTo(nyupan, panOptions);
+  //     } 
+  //     if($(this).attr('id') == 'BK' ) {
+  //     	map.panTo(brooklynpan, panOptions);
+  //     }
+  //     if($(this).attr('id') == 'QN' ) {
+  //       map.panTo(queenspan, panOptions);
+  //      }
+  //  });
       
 
 </script>
