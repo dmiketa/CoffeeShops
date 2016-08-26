@@ -1,0 +1,33 @@
+.jumbotron{
+  font-family: 'Muli', sans-serif;
+}
+
+body {
+ 	font-family: calibri;
+ 	color:#FFF0F2;
+ 	text-align: center;
+ 	background: black;
+  font-size: 16px;
+}
+h1{
+  font-family: avenir;
+  color:#FF0099;
+}
+
+
+
+  #map {
+      width: 100%;
+      height: 500px;
+      background-color: gray;
+      color: black;
+      font-family: 'Muli', sans-serif;
+    }
+
+
+   #button {
+   border-radius: 5px;
+	background-color: grey;
+	font-size: 15px;
+   	;
+   }
