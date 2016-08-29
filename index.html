@@ -85,63 +85,94 @@ map.addLayer(layer)
 var mymappoints =[
 	{name: "<b>Think Coffee</b>",
 		coord:[40.728357,-73.995299],
+		pic:
 		add: " <br/> 248 Mercer  St",
 		deets: "<br/> Favorite place around NYU to do work, although it can get pretty crowded",
 		site: "<br/> <a href ='http://www.thinkcoffee.com'>Website</a>",
 	},
 	{name: "<b>Third Rail Coffee</b>",
 		coord:[40.729916,-73.999625],
+		pic:
 		add: "<br/> 240 Sullivan St",
 		deets: "<br/> A favorite for the NYU Furman Center",
 		site: "<br/><a href ='http://www.thirdrailcoffee.com'>Website</a>",
 	},
 	{name: "<b>Stumptown</b>",
 		coord:[40.732789,-73.997981],
+		pic:
 		add: "<br/> 30 West 8th St",
 		deets: "<br/> You usually can't find a spot to sit",
 		site: "<br/><a href ='https://www.stumptowncoffee.com'>Website</a>",
 	},
-	{name: "<b>Kopi Kopi</b>",
-		coord: [40.729377,-73.998261],
-		add: "<br/> 68 West 3rd St",
-		deets: "<br/> I actually wouldn't recommend this place. I saw the largest cockroach ever crawling on the wall once",
-		site: "<br/><a href ='http://www.kopinyc.com'>Website</a>",
+	{name: "<b>AP Cafe</b>",
+		coord: [40.706959,-73.922093],
+		pic:
+		add: "<br/> 420 Troutman St",
+		deets: "<br/> ",
+		site: "<br/><a href ='http://apcafenyc.com/'>Website</a>",
 	},
-	{name: "<b>Two Hands</b>",
-		coord: [40.719686,-73.996032],
-		add: "<br/> 164 Mott St",
-		deets: "<br/> Probably worth going here just for the Tim Tam Slam",
-		site: "<br/><a href ='http://www.twohandsnyc.com/'>Website</a>",
+	{name: "<b>Supercrown Coffee Roasters</b>",
+		coord: [40.703446,-73.930835],
+		pic:
+		add: "<br/> 8 Wilson Ave",
+		deets: "<br/> ",
+		site: "<br/><a href ='http://supercrown.coffee/'>Website</a>",
 	},
-	{name: "<b>Mudspot</b>",
-		coord: [40.729061,-73.986681],
-		add: "<br/> 307 East 9th St",
-		deets: "<br/> Can't go wrong with their regular MUD coffee",
-		site: "<br/><a href ='http://www.mudnyc.com/'>Website</a>",
+	{name: "<b>Outpost Cafe</b>",
+		coord: [40.681799,-73.960276],
+		pic:
+		add: "<br/> 1014 Fulton St",
+		deets: "<br/> ",
+		site: "<br/><a href ='http://www.outpostlounge.com/'>Website</a>",
 	},
 	{name: "<b>Sit and Wonder</b>",
 		coord:[40.677351,-73.963946],
+		pic:
 		add: "<br/> 688 Washington Ave",
 		deets: "<br/> Cute little coffee shop with a cozy back yard that is great during the summer",
 		site: "<br/><a href ='http://sitandwonder.org'>Website</a>",
 	},
 	{name: "<b>Daily Press</b>",
 		coord: [40.681482,-73.955593],
+		pic:
 		add: "<br/> 505 Franklin Ave",
 		deets: "<br/> Conveniently located next to the subway stop",
 		site: "<br/><a href ='http://www.dailypresscoffee.com'>Website</a>",
 	},
 	{name: "<b>Postmark Cafe</b>",
 		coord:[40.671112,-73.985324],
+		pic:
 		add: "<br/> 326 6th St",
 		deets: "<br/> Cozy and warm cafe. As one yelp reviewer commented that there is no elite hipster douchbaggery at this cafe",
 		site: "<br/><a href ='https://www.facebook.com/Postmark-Cafe-63303771194/'>Website</a>",
 	},
 	{name: "<b>Lazy Ibis</b>",
 		coord:[40.675748,-73.956002],
+		pic:
 		add: "<br/> 663 Franklin Ave",
 		deets: "<br/> My roommate loves their coffee",
 		site: "<br/><a href ='http://www.lazyibisnyc.com'>Website</a>",
+	},
+	{name: "<b>Little Zelda</b>",
+		coord:[40.673742,-73.957071],
+		pic:
+		add: "<br/> 728 Franklin Ave",
+		deets: "<br/> ",
+		site: "<br/><a href ='https://www.facebook.com/littlezelda/'>Website</a>",
+	},
+	{name: "<b>Cafe Regular Du Nord</b>",
+		coord:[40.675136,-73.975473],
+		pic:
+		add: "<br/> 158 Berkley Pl",
+		deets: "<br/> ",
+		site: "<br/><a href ='http://www.caferegular.com/'>Website</a>",
+	},
+		{name: "<b>Btwxtd Cafe</b>",
+		coord:[40.679050,-73.968130],
+		pic:
+		add: "<br/> 609 Vanderbilt Ave",
+		deets: "<br/> ",
+		site: "<br/><a href ='https://www.facebook.com/btwxtd/'>Website</a>",
 	},
 	]
 
@@ -149,7 +180,7 @@ var mymappoints =[
 mymappoints.forEach(function(element){
 	var marker = L.marker(element.coord).addTo(map);
 
-	 marker.bindPopup(element.name + element.add + element.deets + element.site)
+	 marker.bindPopup(element.name + element.pic + element.add + element.deets + element.site)
 });
 
 
