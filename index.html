@@ -40,11 +40,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href='#' id="btn-about">About</a></li>
+            <li><a href='#' id="btn-map">Map</a></li>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="jumbotron">
+    <div class="jumbotron"> <!-- toggles" id="about"> -->
       <h2>BROOKLYN</h2>
       <p>Explore the map below to discover coffee shop locations around the borough that are ideal for working</p>
     </div>
@@ -62,12 +63,17 @@
  	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   	<script type="text/javascript">
 
-//EDIT THIS -- Put in jumbotron toggles for About section//
-  	$(document).ready(function(){
-  		$("#btn-about").click(function(){
-  			$(#"about").slideToggle("slow");
-  		});
-  	});
+// //EDIT THIS -- Put in jumbotron toggles for About section//
+//   	$(document).ready(function(){
+//   		$("#btn-about").click(function(){
+//   			$("#about").slideToggle("slow");
+//   		});
+//   	$(document).ready(function(){
+//   		$("#btn-map").click(function(){
+//   			$("#map").slideToggle("slow");
+//   			$("#about").slideUp("slow");
+//   		});
+//   	});
   	
 
 // leaflet information:
@@ -85,7 +91,7 @@ map.addLayer(layer)
 var mymappoints =[
 	{name: "<b>Think Coffee</b>",
 		coord:[40.728357,-73.995299],
-		pic:" ",
+		pic:"",
 		add: " <br/> 248 Mercer  St",
 		deets: "<br/> Favorite place around NYU to do work, although it can get pretty crowded",
 		site: "<br/> <a href ='http://www.thinkcoffee.com'>Website</a>",

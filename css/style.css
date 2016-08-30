@@ -14,7 +14,11 @@ h2{
   color:#FF0099;
 }
 
+.toggles{
+  display: none;
+  color:#3755a5;
 
+}
 
   #map {
       height: 500px;
