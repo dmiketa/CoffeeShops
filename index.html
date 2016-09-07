@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
    <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
    <link href="https://fonts.googleapis.com/css?family=Changa+One|Raleway:100" rel="stylesheet" type="text/css">
 
@@ -45,7 +46,7 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="jumbotron"> <!-- toggles" id="about"> -->
+    <div class="jumbotron toggles" id="about">
       <h2>BROOKLYN</h2>
       <p>Explore the map below to discover coffee shop locations around the borough that are ideal for working</p>
     </div>
@@ -63,17 +64,17 @@
  	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   	<script type="text/javascript">
 
-// //EDIT THIS -- Put in jumbotron toggles for About section//
-//   	$(document).ready(function(){
-//   		$("#btn-about").click(function(){
-//   			$("#about").slideToggle("slow");
-//   		});
-//   	$(document).ready(function(){
-//   		$("#btn-map").click(function(){
-//   			$("#map").slideToggle("slow");
-//   			$("#about").slideUp("slow");
-//   		});
-//   	});
+//EDIT THIS -- Put in jumbotron toggles for About section//
+  	$(document).ready(function(){
+  		$("#btn-about").click(function(){
+  			$("#about").slideToggle("slow");
+  		});
+  	$(document).ready(function(){
+  		$("#btn-map").click(function(){
+  			$("#map").slideToggle("slow");
+  			$("#about").slideUp("slow");
+  		});
+  	});
   	
 
 // leaflet information:
